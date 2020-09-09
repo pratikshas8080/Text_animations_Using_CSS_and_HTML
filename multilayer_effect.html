@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Text Gradient</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Metal Mania", cursive;
+        }
+        
+        .container {
+            background: #000;
+            height: 100vh;
+            /* Center everything in the page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .gradient {
+            font-size: 5rem;
+            /* Set the background of
+				the text */
+            background: linear-gradient(to right, #fcc133, #334efc);
+            display: inline-block;
+            /* Clip the background upto
+				the text */
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* Set the color of the text
+				to transparent */
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="gradient">
+            Happy Halloween
+        </h1>
+    </div>
+</body>
+
+</html>
